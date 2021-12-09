@@ -8,27 +8,22 @@
     <meta name="description" content="Interface de gestion des ouvrages" />
     <meta name="author" content="ESSARRAJ Fouad" />
     <title>Gestion des ouvrages</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
+    
     </script>
 </head>
 
 <body>
-    <div>
-        <div>
+    
             <main>
                 <div >
-                    <h1 >Works</h1>
+                    <h1 >Ouvrages</h1>
                     <ol>
-                        <li ><a>Dashboard</a></li>
-                        <li >Works</li>
+                        <li ><a>Tableau de bord</a></li>
+                        <li >Ouvrages</li>
                     </ol>
-
-                     
                         <div>
 
-                            <form  onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <form id="formSubmit" autocomplete="off">
                                 <div>
                                     <label for="inputTitle" >Title</label>
                                     <input type="text"  id="inputTitle">
@@ -38,60 +33,63 @@
                                     <input type="text" id="inputAuthor">
                                 </div>
                                 <div>
-                                    <label for="inputPrix" >Price</label>
+                                    <label for="inputPrix" >Prix</label>
                                     <input type="number" id="inputPrix">
                                 </div>
                                 <div>
-                                    <label for="inputDate">Date of </label>
+                                    <label for="inputDate">Date de </label>
                                     <input type="date" id="inputDate">
                                 </div>
                                 <div>
                                     <label for="inputLanguage">Langue</label>
                                     <select id="inputLanguage">
-                                        <option value="" disabled selected>Choose...</option>
+                                        <option value="" disabled selected>choisir...</option>
                                         <option value="français">Français</option>
                                         <option value="anglais">Anglais</option>
                                         <option value="arabe">Arabe</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="type" class="form-label">Type</label>
+                                    <label for="workType" >Type</label>
                                     <div>
-                                        <input value="Novel" name="type" type="radio" id="gridCheck">
+                                        <input value="Roman" name="workType" type="radio" id="gridCheck">
                                         <label for="gridCheck">
-                                            Novel
+                                            Roman
                                         </label>
                                     </div>
                                     <div>
-                                        <input value="Trial" name="type" type="radio" id="gridCheck">
+                                        <input value="Essai" name="workType" type="radio" id="gridCheck">
                                         <label  for="gridCheck">
-                                            Trial
+                                            Essai
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input  name="type" value="Bande-Dessinée" type="radio" id="gridCheck">
+                                        <input  name="workType" value="Bande-Dessinée" type="radio" id="gridCheck">
                                         <label  for="gridCheck">
-                                            Comic
+                                            Bande-Dessinée
                                         </label>
                                     </div>
 
                                 </div>
                                 <div>
-                                    <button  type="submit">Add</button>
+                                    <button id="submitButton" type="submit">Ajouter</button>
                                 </div>
                             </form>
 
                         </div>
                     <div>
                         <div>
-                            <table class="table" id="table">
+                            📘
+                        </div>
+                        <div>
+                            <table id="worksTable">
                                 <thead>
                                     <tr>
                                         <th>Titre</th>
                                         <th>Auteur</th>
-                                        <th>Price</th>
-                                        <th>Date of publication</th>
+                                        <th>Prix</th>
+                                        <th>Date de publication</th>
                                         <th>Langue</th>
                                         <th>Type</th>
                                         <th>Actions</th>
@@ -107,8 +105,6 @@
                     </div>
                 </div>
             </main>
-
+        
     <script src="script.js"></script>
 </body>
-
-</html>

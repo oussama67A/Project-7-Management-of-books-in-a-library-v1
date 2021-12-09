@@ -62,13 +62,13 @@
                                       <label for="inputPassword4" class="form-label">author</label>
                                       <input type="email" class="form-control" id="inputEmail4">
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-7">
                                       <label for="inputAddress" class="form-label">price</label>
                                       <input type="text" class="form-control" id="inputAddress" placeholder="">
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-7">
                                       <label for="inputAddress2" class="form-label">publication date</label>
-                                      <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                      <input type="date" class="form-control" id="inputAddress2" placeholder="">
 
                                     <div class="col-md-4">
                                       <label for="inputState" class="form-label">language</label>
@@ -79,14 +79,28 @@
                                         <option>fr</option>
                                       </select>
                                     </div>
-                                    <div class="col-md-2">
-                                      <label for="inputZip" class="form-label">type</label>
-                                      <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>Novel</option>
-                                        <option>Essay</option>
-                                        <option>Comic Strip</option>
-                                      </select>
+                                    <div>
+                                        <label for="type" class="form-label">Type</label>
+                                        <div>
+                                            <input value="Novel" name="type" type="radio" id="gridCheck">
+                                            <label for="gridCheck">
+                                                Novel
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input value="Trial" name="type" type="radio" id="gridCheck">
+                                            <label  for="gridCheck">
+                                                Trial
+                                            </label>
+                                        </div>
+    
+                                        <div>
+                                            <input  name="type" value="Bande-Dessinée" type="radio" id="gridCheck">
+                                            <label  for="gridCheck">
+                                                Comic
+                                            </label>
+                                        </div>
+    
                                     </div>
                                     <div class="col-12">
                                       <div class="form-check">
@@ -189,5 +203,6 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

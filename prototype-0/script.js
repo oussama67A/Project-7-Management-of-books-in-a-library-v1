@@ -1,3 +1,4 @@
+
 document.getElementById("formSubmit").addEventListener("submit", function (event) {
     event.preventDefault();
     var work = readwork();
@@ -36,3 +37,5 @@ function insertNewRow(work) {
     newRow.insertCell(5).innerHTML = work.type;
     newRow.insertCell(6)
 }
+
+uL.addEvenetListener('click', (event) = )
