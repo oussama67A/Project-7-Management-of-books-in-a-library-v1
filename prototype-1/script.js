@@ -23,7 +23,7 @@ function readFormData() {
     return formData;
 }
 
-
+y
 
 function insertNewRecord(data) {
     var table = document.getElementById("table").getElementsByTagName('tbody')[0];
