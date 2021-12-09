@@ -1,4 +1,3 @@
-
 document.getElementById("formSubmit").addEventListener("submit", function (event) {
     event.preventDefault();
     var work = readwork();
@@ -33,9 +32,11 @@ function insertNewRow(work) {
     newRow.insertCell(1).innerHTML = work.author;
     newRow.insertCell(2).innerHTML = work.price;
     newRow.insertCell(3).innerHTML = work.date;
-    newRow.insertCell(4).innerHTML = work.languagel;
-    newRow.insertCell(5).innerHTML = work.type;
-    newRow.insertCell(6)
-}
+    cell5 = newRow.insertCell(4);
+    cell5.innerHTML = work.language
+    cell6 = newRow.insertCell(5)
+    cell6.innerHTML = work.type
+    cell7 = newRow.insertCell(6)
 
-uL.addEvenetListener('click', (event) = )
+
+}
