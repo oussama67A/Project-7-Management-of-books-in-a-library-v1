@@ -1,3 +1,9 @@
 .sb-topnav{
-    background-color: red !important;
+    background-color: black !important;
+}
+#formSubmit{
+    display: none;
+}
+.sb-sidenav-dark{
+    background-color: #FF7C0D;
 }
