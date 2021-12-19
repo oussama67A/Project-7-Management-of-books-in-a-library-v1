@@ -1,9 +1,31 @@
-.sb-topnav{
-    background-color: black !important;
+nav {
+    background-color: #FAC605 !important;
 }
-#formSubmit{
-    display: none;
+
+a {
+    color: black !important;
 }
-.sb-sidenav-dark{
-    background-color: #FF7C0D;
+.sb-sidenav-custom {
+    background-color: #FAA400 !important;
 }
+
+.btn-primary-custom {
+    background-color: #FAC605 !important;
+    color: #F0EBE8 !important;
+}
+
+.btn-primary-custom:hover {
+    background-color: #FAC605 !important;
+    border-color: #FDA050 !important;
+    color: #EC8F1F !important;
+}
+
+.btn-primary-custom:active, .btn-primary-custom.active {
+  background-color: #EC8F1F !important;
+  border-color: #FDA050 !important;
+  color: #F0EBE8 !important;
+    box-shadow: none;
+
+  }
+
+
