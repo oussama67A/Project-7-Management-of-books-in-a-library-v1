@@ -1,5 +1,5 @@
 nav {
-    background-color: #FAC605 !important;
+    background-color: #EBC82A !important;
 }
 
 a {
@@ -10,12 +10,12 @@ a {
 }
 
 .btn-primary-custom {
-    background-color: #FAC605 !important;
+    background-color: #EBC82A !important;
     color: #F0EBE8 !important;
 }
 
 .btn-primary-custom:hover {
-    background-color: #FAC605 !important;
+    background-color: #EBC82A !important;
     border-color: #FDA050 !important;
     color: #EC8F1F !important;
 }
